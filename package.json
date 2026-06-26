@@ -1,0 +1,24 @@
+{
+  "name": "saucedemotest",
+  "version": "1.0.0",
+  "description": "Criar o readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OliSammy/sauceDemoTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/OliSammy/sauceDemoTest/issues"
+  },
+  "homepage": "https://github.com/OliSammy/sauceDemoTest#readme",
+  "dependencies": {
+    "cypress": "^15.18.0"
+  }
+}

@@ -1,0 +1,88 @@
+# Plano de Teste - SauceDemo
+
+## 1. Objetivo
+Criar um plano de teste organizado para validar as principais funcionalidades da aplicação SauceDemo, com foco em testes funcionais.
+## 2. Escopo
+### Funcionalidades a serem testadas
+- Login
+- Catálogo de produtos
+- Carrinho de compras
+- Checkout
+- Finalização de compra
+- Logout
+- Validação de mensagens de erro
+
+### Funcionalidades fora do escopo
+- Integrações externas
+- Performance avançada
+- Testes de API
+
+## 3. Objetivos de Teste
+- Garantir que o fluxo principal de compra funcione corretamente
+- Validar regras de negócio básicas
+- Identificar defeitos críticos e regressões
+- Demonstrar organização, documentação e pensamento analítico de um QA
+
+## 4. Estratégia de Teste
+### Tipos de teste
+- Teste funcional
+- Teste de regressão
+- Teste de interface
+
+
+## 5. Cenários de Teste
+
+### 5.1 Login
+1. Login com usuário válido
+2. Login com senha incorreta
+3. Login com senha menor que 8 caracteres
+4. Login com campos vazios
+
+### 5.2 Catálogo de produtos
+1. Exibir lista de produtos corretamente
+2. Ordenar produtos por preço e nome
+3. Adicionar produto ao carrinho
+4. Remover produto do carrinho na página de produtos
+5. Expandir o item e verificar se o a descrição e a foto permanecesse
+
+### 5.3 Carrinho
+1. Adicionar múltiplos produtos
+2. Remover produto do carrinho
+3. Continuar comprando
+4. Validar valor total correto
+5. Verificar se a descrição e nome e preço são mesmo do catálogo
+
+### 5.4 Checkout
+1. Preencher dados válidos
+2. Preencher dados incompletos
+3. Cancelar checkout
+4. Finalizar compra com sucesso
+5. Verificar as mensagens de erro 
+
+### 5.5 Validações gerais
+1. Mensagens de erro exibidas corretamente
+2. Estado do carrinho persistindo durante o fluxo
+3. Navegação entre páginas sem inconsistências
+
+## 6. Casos de Teste Prioridade
+### Alta prioridade
+- Login com usuário válido
+- Adicionar produto ao carrinho
+- Finalizar compra com sucesso
+- Login com usuário bloqueado
+
+### Média prioridade
+- Ordenação de produtos
+- Remover produtos do carrinho
+- Campo de checkout incompleto
+
+### Baixa prioridade
+- Mensagens visuais secundárias
+- Elementos de interface não críticos
+
+## 7. Critérios de Aceitação
+- Todos os fluxos principais devem funcionar sem falhas críticas
+- Erros esperados devem ser exibidos corretamente
+- O sistema deve permitir compra completa de forma consistente
+- O plano deve ser claro o suficiente para servir como base de demonstração em entrevista
+
