@@ -29,6 +29,11 @@ Criar um plano de teste organizado para validar as principais funcionalidades da
 - Teste de regressão
 - Teste de interface
 
+### Técnicas de teste aplicáveis
+- Partição de equivalência: aplicar principalmente nos cenários em que há entradas com classes bem definidas, como login e checkout. Exemplo: usuário válido, inválido e bloqueado; senha correta, incorreta e vazia; campos de checkout preenchidos corretamente e incompletos.
+- Tabela de decisão: útil para combinar condições do fluxo de login e checkout, como usuário válido + senha válida = acesso liberado; usuário válido + senha inválida = erro; usuário bloqueado + senha válida = acesso negado.
+- Teste de transição de estados: adequado para validar o fluxo completo do sistema, como login → catálogo → carrinho → checkout → confirmação.
+> Observação: a análise de valor limite não se aplica de forma tão relevante neste contexto, pois não há regras de negócio claras que definam limites estritos para os campos analisados.
 
 ## 5. Cenários de Teste
 
