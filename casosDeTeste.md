@@ -60,6 +60,24 @@
   2. Remover o produto diretamente da página de produtos.
 - Resultado esperado: o produto é removido do carrinho e o contador é atualizado.
 
+### CTG-04 - Ordenar produtos por preço e nome
+- Pré-condição: o usuário está autenticado e no catálogo.
+- Passos:
+  1. Abrir o seletor de ordenação.
+  2. Selecionar a opção "Price (low to high)".
+  3. Verificar a ordem dos produtos.
+  4. Selecionar a opção "Name (A to Z)".
+  5. Verificar a nova ordem dos produtos.
+- Resultado esperado: os produtos são exibidos em ordem correta conforme a opção selecionada.
+
+### CTG-05 - Expandir item e verificar descrição e imagem
+- Pré-condição: o usuário está autenticado e no catálogo.
+- Passos:
+  1. Clicar no item desejado para abrir a visualização detalhada.
+  2. Verificar se a descrição do produto é exibida.
+  3. Verificar se a imagem do produto permanece visível.
+- Resultado esperado: o item expandido exibe corretamente a descrição e a imagem do produto.
+
 ## 3. Carrinho de compras
 
 ### CR-01 - Adicionar múltiplos produtos ao carrinho

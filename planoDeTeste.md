@@ -30,8 +30,8 @@ Criar um plano de teste organizado para validar as principais funcionalidades da
 - Teste de interface
 
 ### Técnicas de teste aplicáveis
-- Partição de equivalência: aplicar principalmente nos cenários em que há entradas com classes bem definidas, como login e checkout. Exemplo: usuário válido, inválido e bloqueado; senha correta, incorreta e vazia; campos de checkout preenchidos corretamente e incompletos.
-- Tabela de decisão: útil para combinar condições do fluxo de login e checkout, como usuário válido + senha válida = acesso liberado; usuário válido + senha inválida = erro; usuário bloqueado + senha válida = acesso negado.
+- Partição de equivalência: aplicado principalmente nos cenários em que há entradas com classes bem definidas, como login e checkout. Exemplo: usuário válido, inválido e bloqueado; senha correta, incorreta e vazia; campos de checkout preenchidos corretamente e incompletos.
+- Tabela de decisão: foi útil para combinar condições do fluxo de login e checkout, como usuário válido + senha válida = acesso liberado; usuário válido + senha inválida = erro; usuário bloqueado + senha válida = acesso negado. Garantido uma melhor visualização para o QA.
 - Teste de transição de estados: adequado para validar o fluxo completo do sistema, como login → catálogo → carrinho → checkout → confirmação.
 > Observação: a análise de valor limite não se aplica de forma tão relevante neste contexto, pois não há regras de negócio claras que definam limites estritos para os campos analisados.
 
@@ -48,7 +48,7 @@ Criar um plano de teste organizado para validar as principais funcionalidades da
 2. Ordenar produtos por preço e nome
 3. Adicionar produto ao carrinho
 4. Remover produto do carrinho na página de produtos
-5. Expandir o item e verificar se o a descrição e a foto permanecesse
+5. Expandir o item e verificar se a descrição e a foto permanecem visíveis
 
 ### 5.3 Carrinho
 1. Adicionar múltiplos produtos
