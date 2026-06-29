@@ -184,6 +184,40 @@
   1. Clicar em "Cancel".
 - Resultado esperado: o usuário retorna para o carrinho sem concluir a compra.
 
+### CK-04 - Verificar mensagens de erro no checkout
+- Pré-condição: o usuário possui produtos no carrinho e está na tela de checkout.
+- Passos:
+  1. Tentar prosseguir com um ou mais campos obrigatórios vazios.
+  2. Observar as mensagens exibidas.
+- Resultado esperado: as mensagens de erro aparecem de forma clara e impedem a continuação do fluxo.
+
+### CK-05 - Validar resumo da compra
+- Pré-condição: o usuário possui produtos no carrinho e preencheu os dados de checkout.
+- Passos:
+  1. Avançar para a tela de revisão da compra.
+  2. Verificar os itens, quantidades e valores exibidos.
+- Resultado esperado: o resumo apresenta corretamente os produtos adicionados e os valores esperados.
+
+### CK-06 - Validar cálculo do total
+- Pré-condição: o usuário está na tela de revisão da compra.
+- Passos:
+  1. Identificar o valor do Item Total.
+  2. Identificar o valor da Tax.
+  3. Comparar com o valor do Total exibido.
+- Resultado esperado: a soma do Item Total com a Tax corresponde ao Total apresentado.
+
+### CK-07 - Finalizar compra com sucesso
+- Pré-condição: o usuário possui produtos no carrinho e os dados de checkout foram preenchidos corretamente.
+- Passos:
+  1. Confirmar a compra.
+- Resultado esperado: a compra é finalizada com sucesso e a tela de confirmação é exibida.
+
+### CK-08 - Validar que o carrinho é esvaziado após finalizar
+- Pré-condição: o usuário concluiu a compra com sucesso.
+- Passos:
+  1. Acessar o carrinho após a confirmação.
+- Resultado esperado: o carrinho aparece vazio e o contador de itens retorna para zero.
+
 ## 5. Validações gerais
 
 ### GV-01 - Mensagens de erro exibidas corretamente

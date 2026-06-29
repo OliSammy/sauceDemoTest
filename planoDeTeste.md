@@ -70,8 +70,11 @@ Criar um plano de teste organizado para validar as principais funcionalidades da
 1. Preencher dados válidos
 2. Preencher dados incompletos
 3. Cancelar checkout
-4. Finalizar compra com sucesso
-5. Verificar as mensagens de erro 
+4. Verificar mensagens de erro
+5. Validar resumo da compra
+6. Validar cálculo do total (Item Total + Tax = Total)
+7. Finalizar compra com sucesso
+8. Validar que o carrinho é esvaziado após finalizar
 
 ### 5.5 Validações gerais
 1. Mensagens de erro exibidas corretamente
