@@ -120,19 +120,45 @@
   1. Adicionar dois ou mais produtos ao carrinho.
 - Resultado esperado: todos os produtos aparecem no carrinho corretamente.
 
-### CR-02 - Remover produto do carrinho
+### CR-02 - Remover um produto do carrinho
+- Pré-condição: o usuário possui dois ou mais produtos no carrinho.
+- Passos:
+  1. Acessar o carrinho.
+  2. Clicar em remover para um dos itens.
+- Resultado esperado: o item selecionado é removido e os demais permanecem no carrinho.
+
+### CR-03 - Remover todos os produtos do carrinho
 - Pré-condição: o usuário possui produtos no carrinho.
 - Passos:
   1. Acessar o carrinho.
-  2. Clicar em remover para um item.
-- Resultado esperado: o item é removido e o valor total é recalculado.
+  2. Remover todos os itens disponíveis.
+- Resultado esperado: o carrinho fica vazio e não exibe produtos.
 
-### CR-03 - Validar valor total do carrinho
+### CR-04 - Continuar comprando
+- Pré-condição: o usuário está no carrinho com produtos adicionados.
+- Passos:
+  1. Clicar em "Continue Shopping".
+- Resultado esperado: o usuário retorna ao catálogo de produtos.
+
+### CR-05 - Validar quantidade de itens no carrinho
+- Pré-condição: o usuário adicionou produtos ao carrinho.
+- Passos:
+  1. Verificar o indicador de quantidade do carrinho.
+- Resultado esperado: a quantidade exibida corresponde ao número de itens adicionados.
+
+### CR-06 - Verificar nome, descrição e preço no carrinho
 - Pré-condição: o usuário adicionou produtos ao carrinho.
 - Passos:
   1. Acessar o carrinho.
-  2. Verificar o valor total exibido.
-- Resultado esperado: o valor total corresponde à soma dos produtos adicionados.
+  2. Verificar nome, descrição e preço de cada produto.
+- Resultado esperado: as informações exibidas no carrinho correspondem às do catálogo.
+
+### CR-07 - Validar persistência dos produtos ao navegar entre páginas
+- Pré-condição: o usuário adicionou produtos ao carrinho.
+- Passos:
+  1. Navegar para outra página do fluxo.
+  2. Voltar ao carrinho.
+- Resultado esperado: os produtos continuam presentes no carrinho após a navegação.
 
 ## 4. Checkout
 

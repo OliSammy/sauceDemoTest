@@ -59,10 +59,12 @@ Criar um plano de teste organizado para validar as principais funcionalidades da
 
 ### 5.3 Carrinho
 1. Adicionar múltiplos produtos
-2. Remover produto do carrinho
-3. Continuar comprando
-4. Validar valor total correto
-5. Verificar se a descrição e nome e preço são mesmo do catálogo
+2. Remover um produto do carrinho
+3. Remover todos os produtos do carrinho
+4. Continuar comprando
+5. Validar quantidade de itens no carrinho
+6. Verificar se nome, descrição e preço são os mesmos do catálogo
+7. Validar persistência dos produtos ao navegar entre páginas
 
 ### 5.4 Checkout
 1. Preencher dados válidos
