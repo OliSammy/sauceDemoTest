@@ -8,6 +8,15 @@ export const cartLocators = {
   removeButton: '[data-test^="remove-"]',
   continueShoppingButton: '[data-test="continue-shopping"]',
   checkoutButton: '[data-test="checkout"]',
+  firstNameInput: '#first-name',
+  lastNameInput: '#last-name',
+  postalCodeInput: '#postal-code',
+  continueButton: '[data-test="continue"]',
+  cancelButton: '[data-test="cancel"]',
+  finishButton: '[data-test="finish"]',
   subtotalLabel: '.summary_subtotal_label',
-  totalLabel: '.summary_total_label'
+  taxLabel: '.summary_tax_label',
+  totalLabel: '.summary_total_label',
+  completeHeader: '.complete-header',
+  errorMessage: '[data-test="error"]'
 };
