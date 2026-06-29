@@ -30,8 +30,24 @@ describe('Login', () => {
     });
   });
 
-  it('LG-04 - Login com campos vazios', () => {
-    cy.login('','');
+  it('LG-04 - Login com usuário vazio', () => {
+    cy.fixture('login').then((user) => {
+      cy.login('', user.passwordValid);
+
+      cy.get(loginLocators.errorMessage).should('contain.text', 'Username is required');
+    });
+  });
+
+  it('LG-05 - Login com senha vazia', () => {
+    cy.fixture('login').then((user) => {
+      cy.login(user.usernameValid, '');
+
+      cy.get(loginLocators.errorMessage).should('contain.text', 'Password is required');
+    });
+  });
+
+  it('LG-06 - Login com usuário e senha vazios', () => {
+    cy.login('', '');
 
     cy.get(loginLocators.errorMessage).should('contain.text', 'Username is required');
   });

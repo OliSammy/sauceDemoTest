@@ -29,7 +29,25 @@
   3. Clicar em "LOGIN".
 - Resultado esperado: o sistema não autentica o usuário e exibe mensagem de erro.
 
-### LG-04 - Login com campos vazios
+### LG-04 - Login com usuário vazio
+- Pré-condição: o usuário está na página de login.
+- Entrada: usuário = vazio; senha = secret_sauce.
+- Passos:
+  1. Deixar o campo de usuário vazio.
+  2. Informar a senha secret_sauce.
+  3. Clicar em "LOGIN".
+- Resultado esperado: o sistema impede o login e exibe mensagem de erro de campos obrigatórios.
+
+### LG-05 - Login com senha vazia
+- Pré-condição: o usuário está na página de login.
+- Entrada: usuário = standard_user; senha = vazio.
+- Passos:
+  1. Informar o usuário standard_user.
+  2. Deixar o campo de senha vazio.
+  3. Clicar em "LOGIN".
+- Resultado esperado: o sistema impede o login e exibe mensagem de erro de campos obrigatórios.
+
+### LG-06 - Login com usuário e senha vazios
 - Pré-condição: o usuário está na página de login.
 - Entrada: usuário = vazio; senha = vazio.
 - Passos:

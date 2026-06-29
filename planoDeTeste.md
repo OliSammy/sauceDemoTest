@@ -39,9 +39,11 @@ Criar um plano de teste organizado para validar as principais funcionalidades da
 
 ### 5.1 Login
 1. Login com usuário válido
-2. Login com senha incorreta
-3. Login com senha menor que 8 caracteres
-4. Login com campos vazios
+2. Login com usuário inválido
+3. Login com senha incorreta
+4. Login com usuário vazio
+5. Login com senha vazia
+6. Login com usuário e senha vazios
 
 ### 5.2 Catálogo de produtos
 1. Exibir lista de produtos corretamente
