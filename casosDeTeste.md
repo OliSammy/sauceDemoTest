@@ -51,7 +51,7 @@
 - Passos:
   1. Selecionar um produto.
   2. Clicar em "Add to cart".
-- Resultado esperado: o produto é adicionado ao carrinho e o contador é atualizado.
+- Resultado esperado: o produto é adicionado ao carrinho, o contador é atualizado e o botão deve ser "Remove".
 
 ### CTG-03 - Remover produto da página de produtos
 - Pré-condição: o usuário possui um produto adicionado ao carrinho.
@@ -60,15 +60,19 @@
   2. Remover o produto diretamente da página de produtos.
 - Resultado esperado: o produto é removido do carrinho e o contador é atualizado.
 
-### CTG-04 - Ordenar produtos por preço e nome
+### CTG-04 - Ordenar produtos por todas as opções disponíveis
 - Pré-condição: o usuário está autenticado e no catálogo.
 - Passos:
   1. Abrir o seletor de ordenação.
-  2. Selecionar a opção "Price (low to high)".
-  3. Verificar a ordem dos produtos.
-  4. Selecionar a opção "Name (A to Z)".
-  5. Verificar a nova ordem dos produtos.
-- Resultado esperado: os produtos são exibidos em ordem correta conforme a opção selecionada.
+  2. Selecionar a opção "Name (A to Z)".
+  3. Verificar a ordem alfabética.
+  4. Selecionar a opção "Name (Z to A)".
+  5. Verificar a ordem reversa.
+  6. Selecionar a opção "Price (low to high)".
+  7. Verificar a ordem crescente por preço.
+  8. Selecionar a opção "Price (high to low)".
+  9. Verificar a ordem decrescente por preço.
+- Resultado esperado: os produtos são exibidos em ordem correta conforme cada opção selecionada.
 
 ### CTG-05 - Expandir item e verificar descrição e imagem
 - Pré-condição: o usuário está autenticado e no catálogo.
@@ -77,6 +81,18 @@
   2. Verificar se a descrição do produto é exibida.
   3. Verificar se a imagem do produto permanece visível.
 - Resultado esperado: o item expandido exibe corretamente a descrição e a imagem do produto.
+
+### CTG-06 - Adicionar múltiplos produtos
+- Pré-condição: o usuário está autenticado e no catálogo.
+- Passos:
+  1. Adicionar 3 produtos diferentes ao carrinho.
+- Resultado esperado: o contador do carrinho exibe o valor 3.
+
+### CTG-07 - Remover um produto mantendo outros
+- Pré-condição: o usuário adicionou 3 produtos ao carrinho.
+- Passos:
+  1. Remover um dos produtos adicionados.
+- Resultado esperado: o contador passa para 2 e os demais produtos continuam presentes.
 
 ## 3. Carrinho de compras
 

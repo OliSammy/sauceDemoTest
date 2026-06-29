@@ -45,10 +45,15 @@ Criar um plano de teste organizado para validar as principais funcionalidades da
 
 ### 5.2 Catálogo de produtos
 1. Exibir lista de produtos corretamente
-2. Ordenar produtos por preço e nome
-3. Adicionar produto ao carrinho
-4. Remover produto do carrinho na página de produtos
-5. Expandir o item e verificar se a descrição e a foto permanecem visíveis
+2. Ordenar produtos por Name (A-Z)
+3. Ordenar produtos por Name (Z-A)
+4. Ordenar produtos por Price (Low-High)
+5. Ordenar produtos por Price (High-Low)
+6. Adicionar produto ao carrinho
+7. Remover produto do carrinho na página de produtos
+8. Adicionar múltiplos produtos
+9. Remover um produto mantendo outros
+10. Expandir o item e verificar se a descrição e a foto permanecem visíveis
 
 ### 5.3 Carrinho
 1. Adicionar múltiplos produtos
